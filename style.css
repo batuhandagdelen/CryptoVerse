@@ -1,0 +1,233 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #2c3e50;
+  --light-bg: #f8f9fa;
+  --white-color: #ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto;
+  background-color: var(--light-bg);
+  border-radius: 50%;
+}
+
+.icon #card-icon {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+.title-1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.paragraph-1 {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+}
+.fa-solid {
+  color: var(--secondary-color);
+}
+
+/* Header */
+
+header .navbar {
+  background-color: var(--primary-color) !important;
+  padding: 1rem 4rem;
+}
+header .navbar .navbar-brand {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header .nav-link {
+  color: #ccc;
+  padding: 0.5rem 1rem !important;
+}
+header .nav-link.active {
+  color: #ccc !important;
+}
+
+header #menu-icon {
+  color: var(--white-color) !important;
+  padding: 10px;
+  font-size: 20px !important;
+  display: flex;
+  justify-content: center;
+}
+
+/* Home  */
+#home .carousel-item {
+  position: relative;
+}
+
+#home .carousel-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.399));
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 5rem;
+  height: 5rem;
+  font-weight: bold;
+}
+#home .carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+}
+.carousel-item h5 {
+  font-size: 3.5rem !important;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.carousel-caption {
+  margin-bottom: 6rem;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+
+/* Popular Cryptos */
+
+.section-card {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.section-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+/* Features */
+#Features {
+  background-color: var(--light-bg) !important;
+}
+
+/* Comments */
+
+#user-icon {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-star {
+  color: #fdc106;
+}
+
+/* News */
+
+#news {
+  background-color: var(--light-bg) !important;
+}
+
+#news .news-card {
+  border: none;
+  border-radius: 20px !important;
+  cursor: pointer;
+  position: relative;
+}
+
+.news-card .news-image {
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.news-card .news-image img {
+  transition: all 0.5s ease;
+}
+
+.news-card:hover .news-image img {
+  scale: 1.1;
+}
+#news .news-card .news-category {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+#news .news-card .card-title {
+  font-weight: 400;
+}
+
+#news .news-card .card-text {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Contact */
+
+.contact-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 860px !important;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+#icon {
+  font-size: 1.5rem;
+}
+
+form textarea {
+  resize: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+#footer-icon {
+  color: var(--secondary-color);
+}
